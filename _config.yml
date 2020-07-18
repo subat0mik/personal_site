@@ -59,7 +59,7 @@ plugins:
 #Site Author
 author:
   name      : "subat0mik"
-  avatar    : "/assets/images/bio-photo.jpg"
+  avatar    : "/assets/images/neuromancer.jpg"
   bio       : "Penetration Tester, Red Teamer, Security Researcher"
   location  : "Rocky Mountains"
 

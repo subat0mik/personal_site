@@ -5,11 +5,11 @@ categories:
   - blog
 tags:
   - redteam
-  - book
+  - bookreview
   - infosec
 ---
 
-I did not anticipate my first blog post being a book review, but here we are. I recently picked up a copy of "Red Team Development and Operations" by [Joe Vest][joe-vest] and [James Tubberville][james-tubberville] on a recommendation from my good friend [@airzero24][airzero] . This book was particularly interesting to me for two reasons: 1) Joe Vest and James Tubberville are prominent names in the world of red teaming and infosec, and 2) Professionally, building out a red team capability and program are on the forefront of my endeavors. Perhaps you could say that I discovered this book at the perfect time, as it does shine light on many of the topics that I have been working through with my team.
+I did not anticipate my first blog post being a book review, but here we are. I recently picked up a copy of "Red Team Development and Operations" by [Joe Vest][joe-vest] and [James Tubberville][james-tubberville] on a recommendation from my good friend [Josiah Massari][airzero] . This book was particularly interesting to me for two reasons: 1) Joe Vest and James Tubberville are prominent names in the world of red teaming and infosec, and 2) Professionally, building out a red team capability and program are on the forefront of my endeavors. Perhaps you could say that I discovered this book at the perfect time, as it does shine light on many of the topics that I have been working through with my team.
 
 As we started down the path of creating a red team program, we began to realize that it's not feasible to produce a red team exercise out of a framework built around delivering penetration tests. Having studied red team operations and tradecraft, I am familiar with what a red team exercise looks like from a technical operator perspective, but that's just the tip of the iceberg. _Red Team Development and Operations_ provides a thorough treatment of the documentation, procedures, and considerations to be taken when planning a red team exercise.
 

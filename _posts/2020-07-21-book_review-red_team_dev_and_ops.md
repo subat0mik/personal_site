@@ -1,6 +1,7 @@
 ---
 title: "Book Review: Red Team Development and Operations"
 date: 2020-07-21
+Description: "Book Review: Red Team Development and Operations"
 categories:
   - blog
 tags:

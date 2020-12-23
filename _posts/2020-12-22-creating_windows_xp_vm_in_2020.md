@@ -24,26 +24,26 @@ The BLUF: Extract the Windows XP virtual hard disk from the XP mode package, whi
 
 ### STEP 1: Extract the necessary files from the XP Mode package.
 
-+ Using 7-Zip, right click on the file > open archive > select `cab`
++ Using 7-Zip, right click on the file > open archive > select `cab`\\
 ![Extract00](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_02_extract_files.png)
 
-+ Within 7-Zip, there will be a `sources` directory. This contains the files of interest. Double-click it
++ Within 7-Zip, there will be a `sources` directory. This contains the files of interest. Double-click it\\
 ![Extract01](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_03_extract_files.png)
 
-+ Within `sources`, there will be another file called `xpm`. Double-click it to extract the contents.
++ Within `sources`, there will be another file called `xpm`. Double-click it to extract the contents.\\
 ![Extract02](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_04_extract_files.png)
 
-+ Within `xpm`, there will be several files. Extract these files to some directory.
++ Within `xpm`, there will be several files. Extract these files to some directory.\\
 ![Extract03](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_05_extract_files.png)
 
-+ The file of interest is VirtualXPVHD. Rename this file to `VirtualXP.vhd`. This is the virtual hard disk (VHD) file containing Windows XP.
++ The file of interest is VirtualXPVHD. Rename this file to `VirtualXP.vhd`. This is the virtual hard disk (VHD) file containing Windows XP.\\
 ![Extract04](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_06_extract_files.png)
 
 ### STEP 2: Import the VHD to a new Virtual Machine.
 
 This step is trivial, so I won't go into too much detail here. I am using VMware Fusion on MacOS, but the process is similar for Virtual Box and other VMware platforms.
 
-Select Import and navigate to the VHD file that we just extracted.
+Select Import and navigate to the VHD file that we just extracted.\\
 ![Import00](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_07_import.png)
 
 ### STEP 3: OS and VMware Tools Install.
@@ -54,13 +54,13 @@ Continue through the steps until the VM is ready then power it on. Go through th
 
 In my experience, the cursor was broken. Clicking seemed to work, but it was as if the cursor was stuck in the top left corner of the display, thus making it impossible to use. In order to fix this issue, we must uninstall `Virtual PC Integration Components`.
 
-First, open a cmd shell by pressing `win + r` and typing `cmd` then selecting `run`.
+First, open a cmd shell by pressing `win + r` and typing `cmd` then selecting `run`.\\
 ![run00](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_08_run_cmd.png)
 
-Next, in the cmd shell, run `wmic`.
+Next, in the cmd shell, run `wmic`.\\
 ![wmic00](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_09_wmic.png)
 
-Within WMIC, execute `product get name` to list installed programs. Our target is `Virtual PC Integration Components`.
+Within WMIC, execute `product get name` to list installed programs. Our target is `Virtual PC Integration Components`.\\
 
 ![wmic01](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_10_wmic_list.png)
 

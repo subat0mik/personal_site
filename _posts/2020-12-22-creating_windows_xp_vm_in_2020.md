@@ -17,12 +17,12 @@ While there is no reason to be using Windows XP in 2020 and beyond, it is still 
 The BLUF: Extract the Windows XP virtual hard disk from the XP mode package, which can be downloaded directly from Microsoft. Import the VHD as a new VM. Fix stuff. Profit.
 
 
-###STEP 0:### _Download the XP mode package from [Microsoft][xp-mode-download]_
+### STEP 0: Download the XP mode package from [Microsoft][xp-mode-download]
 ![Download00](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-2_00_download_00.png)
 ![Download01](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_00_download_01.png)
 
 
-###STEP 1:### _Extract the necessary files from the XP Mode package._
+### STEP 1: Extract the necessary files from the XP Mode package.
 
 + Using 7-Zip, right click on the file > open archive > select `cab`
 ![Extract00](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_02_extract_files.png)
@@ -39,18 +39,18 @@ The BLUF: Extract the Windows XP virtual hard disk from the XP mode package, whi
 + The file of interest is VirtualXPVHD. Rename this file to `VirtualXP.vhd`. This is the virtual hard disk (VHD) file containing Windows XP.
 ![Extract04](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_06_extract_files.png)
 
-*STEP 2:* Import the VHD to a new Virtual Machine.
+### STEP 2: Import the VHD to a new Virtual Machine.
 
 This step is trivial, so I won't go into too much detail here. I am using VMware Fusion on MacOS, but the process is similar for Virtual Box and other VMware platforms.
 
 Select Import and navigate to the VHD file that we just extracted.
 ![Import00](https://github.com/subat0mik/personal_site/raw/master/_posts/images/2020-12-22_07_import.png)
 
-*STEP 3:* OS and VMware Tools Install
+### STEP 3: OS and VMware Tools Install.
 
 Continue through the steps until the VM is ready then power it on. Go through the Windows XP setup and VMware tools installation. The cursor won't be working at this stage. You will have to use `tab` and `arrow` keys to navigate the installation. Once VMware tools installs, the display may be black. Reboot the VM and you should be able to log into XP as normal.
 
-*STEP 4:* Fix Stuff
+### STEP 4: Fix Stuff.
 
 In my experience, the cursor was broken. Clicking seemed to work, but it was as if the cursor was stuck in the top left corner of the display, thus making it impossible to use. In order to fix this issue, we must uninstall `Virtual PC Integration Components`.
 

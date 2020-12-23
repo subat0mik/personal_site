@@ -16,26 +16,27 @@ While there is no reason to be using Windows XP in 2020 and beyond, it is still 
 
 The BLUF: Extract the Windows XP virtual hard disk from the XP mode package, which can be downloaded directly from Microsoft. Import the VHD as a new VM. Fix stuff. Profit.
 
+===
 *STEP 0:* Download the XP mode package from [Microsoft][xp-mode-download]
 ![Download00](images/2020-12-22_00_download_00.png)
 ![Download01](images/2020-12-22_00_download_01.png)
-=====
 
-*STEP 1:* Extract the necessary files from the XP Mode package.
 ===
-Using 7-Zip, right click on the file > open archive > select `cab`
+*STEP 1:* Extract the necessary files from the XP Mode package.
+
+* Using 7-Zip, right click on the file > open archive > select `cab`
 ![Extract00](images/2020-12-22_02_extract_files.png)
 
-Within 7-Zip, there will be a `sources` directory. This contains the files of interest. Double-click it
+* Within 7-Zip, there will be a `sources` directory. This contains the files of interest. Double-click it
 ![Extract01](images/2020-12-22_03_extract_files.png)
 
-Within `sources`, there will be another file called `xpm`. Double-click it to extract the contents.
+* Within `sources`, there will be another file called `xpm`. Double-click it to extract the contents.
 ![Extract02](images/2020-12-22_04_extract_files.png)
 
-Within `xpm`, there will be several files. Extract these files to some directory.
+* Within `xpm`, there will be several files. Extract these files to some directory.
 ![Extract03](images/2020-12-22_05_extract_files.png)
 
-The file of interest is VirtualXPVHD. Rename this file to `VirtualXP.vhd`. This is the virtual hard disk (VHD) file containing Windows XP.
+* The file of interest is VirtualXPVHD. Rename this file to `VirtualXP.vhd`. This is the virtual hard disk (VHD) file containing Windows XP.
 ![Extract04](images/2020-12-22_06_extract_files.png)
 
 *STEP 2:* Import the VHD to a new Virtual Machine.
